@@ -1,6 +1,7 @@
 from player import Player
 from game import Game
 from ranking import Rank
+#hàm khởi động trò chơi, hỏi số lượng người, hỏi tuổi
 def main():
     numplayers = int(input('How many people you guys want to play: '))
     players = []
