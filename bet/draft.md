@@ -48,3 +48,27 @@
         player.account += result
         print('Your balance is:', player.account)
         return player.account
+
+while True:
+        print("[1]. Đăng kí")
+        print("[2]. Đăng nhập")
+        print("[3]. Đăng xuất")
+        print("[4]. Exit program")
+        try:
+           choice =  int(input("Chọn các lựa chọn sau: "))
+        except ValueError:
+            print("Invalid input, try again!")
+            continue
+        if choice == 1:
+            sign_up(auth)
+        elif choice == 2:
+            log_in(auth)
+            break
+        elif choice == 3:
+            log_out(auth)
+        if choice == 4:
+            print("Exit....")
+            return
+        else:
+            print("Invalid input")
+            return

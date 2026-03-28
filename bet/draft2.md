@@ -39,3 +39,9 @@ def main():
     r.ranking()
 if __name__ == '__main__':
     main()
+
+#more in UX
+if username not in auth.users_db:
+    create = input("Tài khoản chưa tồn tại. Tạo mới? (yes/no): ")
+    if create == "yes":
+        sign_up(auth)

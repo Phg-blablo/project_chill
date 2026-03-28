@@ -9,7 +9,7 @@ class Game:
         dice3 = randint(1,6)
         total = dice1+dice2+dice3
         threekind = (dice1 == dice2 == dice3)
-        return total, threekind
+        return (dice1, dice2, dice3), total, threekind
     def valid_bet(self, bet, player):
         if bet < 0: 
             return False,
